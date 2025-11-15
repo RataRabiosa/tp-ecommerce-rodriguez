@@ -21,8 +21,6 @@ const CartModal = () => {
             body: JSON.stringify(e)
         });
         const orderResponse = await createOrder.json();
-        console.log(createOrder.status)
-        console.log(orderResponse);
 
         if (createOrder.status === 201) {
             setOrderStatus('success');
