@@ -29,7 +29,8 @@ const Products = () => {
         const json = await resp.json();
         setProductList(json);
       } catch (err) {
-        setError(err.message);
+        setError("Error al obtener productos. Por favor, intente nuevamente más tarde.");
+        console.error("Error fetching products:", err);
       } finally {
         setLoading(false);
       }
@@ -50,7 +51,7 @@ const Products = () => {
   if (error)
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-red-500 text-lg">Error: {error}</p>
+        <p className="text-red-500 text-lg">{error}</p>
       </div>
     );
 
