@@ -12,7 +12,7 @@ export const CartStorage = create()(
                     set({
                         cartItems: get().cartItems.map(cartItem =>
                             cartItem.id === item.id
-                                ? { ...cartItem, quantity: cartItem.quantity + item.quantity, price: cartItem.price + item.price }
+                                ? { ...cartItem, quantity: cartItem.quantity + item.quantity, price: cartItem.price + (item.price * item.quantity) }
                                 : cartItem
                         )
                     });
