@@ -19,7 +19,7 @@ export const CartStorage = create()(
                 } else {
                     // Si el artículo no está en el carrito, agregarlo
                     set({
-                        cartItems: [...get().cartItems, { ...item, quantity: item.quantity }]
+                        cartItems: [...get().cartItems, { ...item, quantity: item.quantity, price: item.price * item.quantity  }]
                     });
                 }
             },
