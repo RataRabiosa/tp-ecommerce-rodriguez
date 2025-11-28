@@ -11,8 +11,16 @@
 - React Hook Form  
 - JSON-Server  
 
----
+## Cloud deployment
+- Vercel (webapp)
+- Render (api)
 
+Url: https://tp-ecommerce-rodriguez.vercel.app/
+- API
+   - products: https://restful-api-vercel.onrender.com/api/products
+   - orders: https://restful-api-vercel.onrender.com/api/orders
+
+Api repo: https://github.com/RataRabiosa/restful-api-vercel
 ## 🚀 Instalación y Ejecución
 
 ### 1️⃣ Clonar el repositorio  
