@@ -23,7 +23,7 @@ const Products = () => {
         // Esperar 2 segundos para simular carga
         await new Promise((resolve) => setTimeout(resolve, 2000));
         //const resp = await fetch("http://localhost:8000/products");
-        const resp = await fetch("https://restful-api-vercel-ashy.vercel.app/products");
+        const resp = await fetch("https://restful-api-vercel.onrender.com/api/products");
         if (!resp.ok) {
           throw new Error(`Error al obtener productos - status: ${resp.status}`);
         }
