@@ -2,11 +2,9 @@
   "version": 2,
   "builds": [
     {
-      // The source path now points to your server file
       "src": "src/api/server.js",
       "use": "@vercel/node",
       "config": {
-        // IMPORTANT: include the db.json file from the root
         "includeFiles": ["db.json"] 
       }
     }
@@ -14,7 +12,6 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      // The destination points to the serverless function source path
       "dest": "src/api/server.js"
     }
   ]
