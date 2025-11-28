@@ -14,7 +14,7 @@ const CartModal = () => {
 
     try {
         //const createOrder = await fetch('http://localhost:8000/orders', {
-        const createOrder = await fetch ('https://restful-api-vercel-ashy.vercel.app/orders', {
+        const createOrder = await fetch ('https://restful-api-vercel.onrender.com/api/orders', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
